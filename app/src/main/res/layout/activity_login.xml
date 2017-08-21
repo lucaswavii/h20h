@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    tools:context="br.com.wavii.h2o.h2oh.Activitys.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/h2oh" />
+
+    <TextView
+        android:id="@+id/tvH2oDelivey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:text="Delivery"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvEmailRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:fontFamily="cursive"
+        android:text="Email:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etEmailRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/tvEmailRegistro"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignRight="@+id/tvEmailRegistro"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/tvEmailRegistro"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Informe e-mail"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSenhaRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Senha:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/etEmailRegistro"
+        android:layout_alignLeft="@+id/etEmailRegistro"
+        android:layout_alignStart="@+id/etEmailRegistro"
+        android:layout_alignRight="@+id/etEmailRegistro"
+        android:layout_alignEnd="@+id/etEmailRegistro" />
+
+    <EditText
+        android:id="@+id/etSenhaRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/tvSenhaRegistro"
+        android:layout_alignLeft="@+id/tvSenhaRegistro"
+        android:layout_alignRight="@+id/tvSenhaRegistro"
+        android:layout_alignStart="@+id/tvSenhaRegistro"
+        android:layout_below="@+id/tvSenhaRegistro"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Informe Senha"
+        android:inputType="numberPassword"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/ckLogado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Manter Login"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/etSenhaRegistro"
+        android:layout_alignLeft="@+id/etSenhaRegistro"
+        android:layout_alignStart="@+id/etSenhaRegistro"
+        android:layout_alignRight="@+id/etSenhaRegistro"
+        android:layout_alignEnd="@+id/etSenhaRegistro" />
+
+
+    <Button
+        android:id="@+id/btnSalvarRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_custom_gree"
+        android:fontFamily="sans-serif"
+        android:text="Acessar"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/ckLogado"
+        android:onClick="btnLogarClick"
+        android:layout_alignLeft="@+id/ckLogado"
+        android:layout_alignStart="@+id/ckLogado"
+        android:layout_alignRight="@+id/ckLogado"
+        android:layout_alignEnd="@+id/ckLogado" />
+
+    <Button
+        android:id="@+id/btnRegistrarLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_custom_blue"
+        android:text="novo cadastro"
+        android:onClick="btnRegistroLoginClick"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/btnSalvarRegistro"
+        android:layout_alignLeft="@+id/btnSalvarRegistro"
+        android:layout_alignStart="@+id/btnSalvarRegistro"
+        android:layout_marginTop="12dp"
+        android:layout_alignRight="@+id/btnSalvarRegistro"
+        android:layout_alignEnd="@+id/btnSalvarRegistro" />
+
+
+
+</RelativeLayout>
